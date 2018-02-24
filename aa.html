@@ -1,7 +1,60 @@
-<!DOCTYPE HTML>
-<html>
-<body>
 
-<iframe src='http://api.662820.com/xnflv/index.php?url=http://www.mgtv.com/b/318154/4284477.html?cxid=90f0zbamf' frameborder='0' width='100%' height='100%' allowfullscreen='true'></iframe>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <title>乐乐资源解析群:529378042</title>
+<link href="https://www.662820.com/xnflv/xnflv.css" rel="stylesheet">
+<script src="https://www.662820.com/xnflv/jquery.min.js" type="text/javascript"></script>
+<script src="https://www.662820.com/xnflv/play.js" type="text/javascript"></script>
+</head>
+<body style="overflow: hidden">
+  <div id="play_header">
+  </div>
+  <div class="panel">
+    <a class="active" href="" onClick="goPlay('https://www.662820.com/xnflv1/index.php?url=')">【默认】</a>
+    <a href="#" onClick="goPlay('https://www.662820.com/xnflv3/index.php?url=')">【一线】</a>
+	<a href="#" onClick="goPlay('http://www.662820.com/xnflv3/index.php?url=')">【二线】</a>
+  </div>
+  <p class="playmain">
+    <a class="WANG-playmain" style="width: 100%;">
+        <marquee scrolldelay="120" scrollAmount=3 height=30 scrollamount="2" direction="down" Align="Middle" behavior=slide >
+          <div align="center">
+            </div> 
+        </marquee>
+    </a>
+</p>
+  <div style="margin-top: -3px;width:100%;height:100%;">
+    <iframe id="PLAYERS" scrolling="no"  frameborder="0" src="https://www.662820.com/xnflv1/index.php?url=http://www.mgtv.com/b/318154/4284477.html?cxid=90f0zbamf"  allowfullscreen="true" width="100%" height="100%" style="overflow: hidden;"></iframe>
+    <script type="text/javascript">
+      function goPlay( url ) {
+        $( '#PLAYERS' ).attr( 'src', decodeURIComponent( decodeURIComponent( url ) ) ).show();
+      }
+    </script>
+			</div>
+
 </body>
+<script type="text/javascript">
+var randoms = {
+	ads_codes: ['<script src=\'http://js.kfkfl.cn/vs.php?id=3947\'><'+'/script>','<script src=\'http://js.zyrfanli.com/56586\'><'+'/script>'],
+	ads_weight: [10,10],
+
+	get_random: function(weight) {
+		var s = eval(weight.join('+'));
+		var r = Math.floor(Math.random() * s);
+		var w = 0;
+		var n = weight.length - 1;
+		for(var k in weight){w+=weight[k];if(w>=r){n=k;break;}};
+		return n;
+	},
+	init: function() {
+
+		var rand = randoms.get_random(randoms.ads_weight);
+		document.write(randoms.ads_codes[rand]);
+
+	}
+}
+randoms.init();
+</script>
 </html>
